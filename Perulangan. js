@@ -1,0 +1,28 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perulangan</title>
+</head>
+<body>
+    <div id="hasilPerulangan"></div>
+    <script src="perulangan.js"></script>
+</body>
+</html>
+
+          function cek() {
+    let x = parseInt(prompt("Masukkan angka pertama: "));
+    let y = parseInt(prompt("Masukkan terakhir: "));
+    let hasilPerulangan = "";
+
+    for (let u = x; u <= y; u++) {
+        hasilPerulangan += u + "<br>";
+    }
+
+    // Menampilkan hasil di elemen dengan id 'hasilPerulangan'
+    document.getElementById("hasilPerulangan").innerHTML = hasilPerulangan;
+}
+
+// Panggil fungsi cek()
+cek();
